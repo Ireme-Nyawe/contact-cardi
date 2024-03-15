@@ -8,16 +8,16 @@ export default function Card() {
     email: "email@email.cc",
     isFavorite: true,
   });
-  function handleClick() {
+  function toglleFavorite() {
     setContact((prevContact) => ({
       ...prevContact,
       isFavorite: !prevContact.isFavorite,
     }));
   }
   return (
-    <div className="card" onClick={handleClick}>
+    <div className="card">
       <img src={contact.profile} alt="card-image" />
-      <Star isFavorite={contact.isFavorite}></Star>
+      <Star isFavorite={contact.isFavorite} handleClick={toglleFavorite}></Star>
       <h3>John Doe</h3>
       <span>{contact.phone}</span>
       <span>{contact.email}</span>

@@ -18,4 +18,5 @@
 }
 .favorite-icon{
   width: 40px;
+  cursor: pointer;
 }
