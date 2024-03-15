@@ -1,0 +1,21 @@
+*{
+  font-family: Karl, sans-serif;
+  box-sizing: border-box;
+}
+.card{
+  width: 300px;
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%,-1%);
+  border-radius: 10px;
+  box-shadow: 2px 0px 6px grey;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+}
+.favorite-icon{
+  width: 40px;
+}
